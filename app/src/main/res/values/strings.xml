@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GithubUser</string>
+    <string name="search">Search</string>
+    <string name="nama">Nama</string>
+    <string name="username">Username</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="follow_count">0</string>
+    <string name="no_followers">Tidak ada Followers</string>
+    <string name="no_following">Tidak ada Following</string>
+    <string name="image_user">Image User</string>
+    <string name="favorite">Favorite</string>
+    <string name="favoriteUser">FavoriteUser</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="add">add</string>
+    <string name="is_deleted_from_fav">is deleted from favorite</string>
+    <string name="undo">Undo</string>
+    <string name="is_added_to_fav">is added to favorite</string>
+    <string name="see_favorite">See favorite</string>
+</resources>
