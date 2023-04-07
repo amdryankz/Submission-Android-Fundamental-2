@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ui.FavoriteActivity">
 
+    <TextView
+        android:id="@+id/label_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tidak_ada_favorite_user"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_users_favorite"
         android:layout_width="0dp"

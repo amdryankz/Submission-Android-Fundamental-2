@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -107,17 +108,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.setting_menu -> {
                 val i = Intent(this, SettingActivity::class.java)
                 startActivity(i)
-                return true
+                true
             }
             R.id.fav_menu -> {
                 startActivity(Intent(this@MainActivity, FavoriteActivity::class.java))
-                return true
+                true
             }
-            else -> return true
+            else -> true
         }
     }
 

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
@@ -48,6 +49,7 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     private fun setUserData(user: List<UserResponse>) {
+        binding?.labelFav?.visibility = if (user.isEmpty()) View.VISIBLE else View.GONE
         val listUserAdapter = ListUserAdapter(user)
         binding?.rvUsersFavorite?.adapter = listUserAdapter
 

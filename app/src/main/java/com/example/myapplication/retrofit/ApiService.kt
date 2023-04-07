@@ -11,7 +11,7 @@ import retrofit2.http.Query
 
 interface ApiService {
     @GET("users")
-    @Headers("Authorization: token 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")
+//    @Headers("Authorization: token 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")
     fun getUser(): Call<List<UserResponse>>
 
     @GET("users/{username}")

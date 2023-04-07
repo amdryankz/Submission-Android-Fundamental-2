@@ -19,12 +19,12 @@ class UserRepository(application: Application) {
 
     fun getAllUsers(): LiveData<List<UserResponse>> = mUsersDao.getAllUsers()
 
-    fun insert(note: UserResponse) {
-        executorService.execute { mUsersDao.insert(note) }
+    fun insert(user: UserResponse) {
+        executorService.execute { mUsersDao.insert(user) }
     }
 
-    fun delete(note: UserResponse) {
-        executorService.execute { mUsersDao.delete(note) }
+    fun delete(user: UserResponse) {
+        executorService.execute { mUsersDao.delete(user) }
     }
 
 }

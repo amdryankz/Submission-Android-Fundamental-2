@@ -18,4 +18,6 @@
     <string name="undo">Undo</string>
     <string name="is_added_to_fav">is added to favorite</string>
     <string name="see_favorite">See favorite</string>
+    <string name="image" />
+    <string name="tidak_ada_favorite_user">Tidak ada Favorite User</string>
 </resources>

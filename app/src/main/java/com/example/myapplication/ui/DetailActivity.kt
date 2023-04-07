@@ -19,19 +19,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
 
 class DetailActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityDetailBinding
     private var isFav: Boolean = false
-
-    companion object {
-        const val KEY_USERS = "key_users"
-
-        @StringRes
-        private val TAB_TITLES = intArrayOf(
-            R.string.followers,
-            R.string.following
-        )
-    }
 
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -152,5 +141,15 @@ class DetailActivity : AppCompatActivity() {
     private fun obtainViewModel(activity: AppCompatActivity): DetailViewModel {
         val factory = FavoriteViewModelFactory.getInstance(activity.application)
         return ViewModelProvider(activity, factory)[DetailViewModel::class.java]
+    }
+
+    companion object {
+        const val KEY_USERS = "key_users"
+
+        @StringRes
+        private val TAB_TITLES = intArrayOf(
+            R.string.followers,
+            R.string.following
+        )
     }
 }
